@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+
+    <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32.png" />
+    <link href="style.css" rel="stylesheet" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <title>SkyDivers | Interactive rating component</title>
+</head>
+
+<body>
+    <main>
+        <div class="card">
+            <span class="circle-background">
+                <img src="/images/icon-star.svg" alt="Star Icon" />
+            </span>
+            <h1>How did we do?</h1>
+            <p>
+                Please let us know how we did with your support request. All feedback
+                is appreciated to help us improve our offering!
+            </p>
+            <form class="rating-form" action="success.html">
+                <fieldset class="rating-container">
+                    <input type="radio" id="rating-1" name="rating" value="1" />
+                    <label for="rating-1" class="circle-background">1</label>
+                    <input type="radio" id="rating-2" name="rating" value="2" />
+                    <label for="rating-2" class="circle-background">2</label>
+                    <input type="radio" id="rating-3" name="rating" value="3" />
+                    <label for="rating-3" class="circle-background">3</label>
+                    <input type="radio" id="rating-4" name="rating" value="4" />
+                    <label for="rating-4" class="circle-background">4</label>
+                    <input type="radio" id="rating-5" name="rating" value="5" />
+                    <label for="rating-5" class="circle-background">5</label>
+                </fieldset>
+                <input class="button-submit" type="submit" value="Submit" />
+            </form>
+        </div>
+    </main>
+</body>
+
+</html>

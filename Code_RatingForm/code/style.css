@@ -1,0 +1,162 @@
+:root {
+    --colorPrimary: hsl(25, 97%, 53%);
+    --colorSecondary-700: hsl(213, 19%, 18%);
+    --colorNeutral-500: hsl(216, 12%, 54%);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+ html {
+    font-size: 16px;
+}
+
+body {
+    font-family: 'Overpass', sans-serif;
+    background-color: #141519;
+}
+
+main {
+    display: flex;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.card {
+    background: linear-gradient(0deg, #171e28 30%, #212833 100%);
+    padding: 2rem 1.5rem 2.25rem;
+    border-radius: 1rem;
+    width: 22rem;
+    margin: auto;
+}
+
+.card-success {
+    text-align: center;
+}
+
+.card .circle-background {
+    background-color: #262f38;
+    width: 2.5rem;
+    height: 2.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    color: var(--colorNeutral-500);
+}
+
+.card h1 {
+    color: #fff;
+    font-size: 1.5rem;
+    font-weight: 400;
+    margin: 1rem 0;
+}
+
+.card p {
+    font-size: 0.9375rem;
+    color: var(--colorNeutral-500);
+    line-height: 1.5;
+    display: block;
+}
+
+.rating-form fieldset {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border: 0;
+    margin: 1.5rem 0;
+}
+
+.rating-form input[type="radio"] {
+    appearance: none;
+    -moz-appearance: none;
+    -webkit-appearance: none;
+    display: none;
+}
+
+.rating-form input[type="radio"]:checked + label {
+    background-color: var(--colorNeutral-500);
+    color: #fff;
+}
+
+.rating-form input[type="radio"] + label {
+    cursor: pointer;
+    line-height: 1;
+    font-size: 14px;
+	padding: 1.25rem 1rem 1rem;
+}
+
+.rating-form label:hover {
+    background-color: var(--colorPrimary);
+    color: #fff;
+}
+
+.rating-form .button-submit {
+    background-color: var(--colorPrimary);
+    padding: 1rem;
+    border-radius: 9999px;
+    width: 100%;
+    display: block;
+    color: #fff;
+    font-weight: 400;
+    border: 0;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    cursor: pointer;
+}
+
+.rating-form .button-submit:hover {
+    background-color: #fff;
+    color: var(--colorPrimary);
+}
+
+.rating-pill {
+    color: var(--colorPrimary);
+    padding: 0.65rem 1rem 0.4rem;
+    border-radius: 9999px;
+    line-height: 1.1;
+    background-color: var(--colorSecondary-700);
+    margin: 1rem 0;
+    font-size: 0.875rem;
+    display: inline-block;
+}
+
+@media screen and (min-width: 48em) {
+    .card {
+        width: 25rem;
+        padding: 2rem;
+        border-radius: 2rem;
+    }
+
+    .card h1 {
+        font-size: 1.75rem;
+        margin: 1rem 0 0.75rem;
+    }
+
+    .card .circle-background + h1 {
+        margin-top: 2rem;
+    }
+
+    .card img {
+        display: inline-block;
+        margin: 1rem 0;
+    }
+    
+    .card .circle-background {
+        width: 3rem;
+        height: 3rem;
+    }
+
+    .rating-form .button-submit {
+        margin-top: 2rem;
+    }
+
+    .card p {
+        margin-bottom: 1.5rem;
+    }
+}
+
+
